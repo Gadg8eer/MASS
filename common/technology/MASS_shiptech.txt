@@ -1,0 +1,55 @@
+##UNYIELDING##
+#Unyielding Ship Sections ##put in society because engineering has so much##
+
+tech_MASS_military_astroengineering_1 = {
+	cost = 500
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight1
+	is_rare = no
+	
+	## unlock Military Engineering Ships
+	prereqfor_desc = {
+		ship = {
+			title = "tech_MASS_unlock_constructorvette_ships_title"
+			desc = "tech_MASS_unlock_constructorvette_ships_desc"
+		}
+	}
+	
+	potential = {
+			OR = {
+				"tech_corvettes"
+				"tech_space_construction"
+			}
+		}
+	}
+
+##how likely the tech will be pulled
+	weight_modifier = { 
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+				has_ethic = ethic_xenophile
+			}
+		}
+	}
+
+##how likely the AI ​​is to research them
+	ai_weight = {
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+				has_ethic = ethic_xenophile
+			}
+		}
+	}
+}

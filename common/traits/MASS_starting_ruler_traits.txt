@@ -1,0 +1,25 @@
+@class_trait_weight_MASS_godlike_inventor = 0
+
+leader_trait_MASS_godlike_inventor = {
+	starting_ruler_trait = yes
+	forbidden_origins = { origin_legendary_leader }
+	cost = 1
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_spark_of_genius"
+		RARITY = common
+		COUNCIL = yes
+		TIER = 1
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.02
+		# increased chance to discover rare techs (weighted in tech-script)
+	}
+	leader_class = { scientist }
+	selectable_weight = {
+		weight = @class_trait_weight_MASS_godlike_inventor
+		inline_script = paragon/council_weight_mult
+	}
+	ai_weight = 200
+}

@@ -1,0 +1,22 @@
+namespace = ownship_flag
+
+country_event = {
+    id = ownship_made.1
+    is_triggered_only = yes
+    hide_window = yes
+    trigger = {
+      fromfrom = {
+		OR = {
+        is_ship_size = ownship 
+		is_ship_size = ownship_corvette
+		is_ship_size = ownship_destroyer
+		is_ship_size = ownship_cruiser
+		is_ship_size = ownship_battleship
+      }
+    }
+}
+    immediate = {
+        set_country_flag = ownship_owned
+        
+        }
+    }

@@ -1,0 +1,63 @@
+namespace = ownship_died
+
+
+country_event = {
+    id = ownship_died.1
+    is_triggered_only = yes
+    title = "ownship_died.1.name"
+    desc = "ownship_died.1.desc"
+    show_sound = event_ship_explosion
+    picture = GFX_evt_sabotaged_ship
+    trigger = {
+      fromfrom = {
+        is_ship_size = ownship
+      }
+    }
+    immediate = {
+        add_modifier = { 
+            modifier = modifier_ownship_dead 
+        }
+    }
+    hidden_effect = {
+        owner = {
+            country_event = { 
+                id = ownship_died.2
+                days = 1800
+            }
+        }
+    }
+  }
+  
+country_event = {
+    id = ownship_died.2
+    is_triggered_only = yes
+    title = "ownship_died.2.name"
+    desc = "ownship_died.2.desc"
+    show_sound = event_ship_explosion
+    picture = GFX_evt_sabotaged_ship
+    
+    immediate = {
+        remove_modifier = modifier_ownship_dead
+    }
+	hidden_effect = {
+        owner = {
+            country_event = { 
+                id = ownship_died.3
+                days = 1
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ownship_died.3
+    is_triggered_only = yes
+    title = "ownship_died.3.name"
+    desc = "ownship_died.3.desc"
+    show_sound = event_ship_explosion
+    picture = GFX_evt_sabotaged_ship
+    
+    immediate = {
+       
+    }
+}

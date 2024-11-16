@@ -1,0 +1,92 @@
+namespace = MASS_event
+
+create_ship = {
+
+	name = <string/random>
+	design = <ship design key/target/last_created_design, or use random_existing_design>
+	random_existing_design = <ship size key>
+	graphical_culture = <graphical culture key>
+	prefix = <Y/N, determines if ship name should use owner country prefix>
+	colonizer_species = <species, default: fleet owner founder species>
+}
+
+country_event = {
+	id = MASS_event.0
+	title = MASS_event.0.name
+	desc = MASS_event.0.desc
+	picture = GFX_evt_automated_dreadnought
+ 	location = root
+	is_triggered_only = no
+	fire_only_once = yes	
+
+	trigger = {
+		days_passed = 11
+		is_ai = no
+	}
+
+	option = {
+		name = MASS_event.0a
+		custom_tooltip = MASS_event.0a.tooltip
+		trigger = {
+			has_global_flag = SSM_on
+		}
+		hidden_effect = {
+			set_global_flag = MASS_on
+		}
+	}
+
+	option = {
+		name = MASS_event.0b
+		custom_tooltip = MASS_event.0b.tooltip
+		trigger = {
+			NOT = {
+				has_global_flag = SSM_on
+			}
+		}
+		hidden_effect = {
+			set_global_flag = MASS_startup_error
+		}
+	}
+}
+
+
+
+#country_event = {
+#	id = MASS_event.101
+#	title = MASS_event.101.name
+#	desc = MASS_event.101.desc
+#	picture = GFX_evt_automated_dreadnought
+#	location = root
+#	is_triggered_only = no
+#	fire_only_once = yes	
+#
+#	trigger = {
+#		days_passed = 10
+#		is_ai = no
+#		has_global_flag = SSM_on
+#	}
+#
+#	option = {
+#		name = MASS_event.101a
+#		custom_tooltip = MASS_event.101a.tooltip
+#		trigger = {
+#			has_global_flag = SSM_on
+#		}
+#		hidden_effect = {
+#			set_global_flag = MASS_on
+#		}
+#	}
+#
+#	option = {
+#		name = MASS_event.101b
+#		custom_tooltip = MASS_event.101b.tooltip
+#		trigger = {
+#			NOT = {
+#				has_global_flag = SSM_on
+#			}
+#		}
+#		hidden_effect = {
+#			remove_global_flag = MASS_on
+#		}
+#	}
+#}
