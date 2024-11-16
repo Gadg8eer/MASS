@@ -58,6 +58,6 @@ country_event = {
     picture = GFX_evt_sabotaged_ship
     
     immediate = {
-       
+       destroy_country = yes
     }
 }
