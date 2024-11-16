@@ -7,16 +7,11 @@ country_event = {
     trigger = {
       fromfrom = {
 		OR = {
-        is_ship_size = ownship 
-		is_ship_size = ownship_corvette
-		is_ship_size = ownship_destroyer
-		is_ship_size = ownship_cruiser
-		is_ship_size = ownship_battleship
+        is_ship_size = ownship
       }
     }
 }
     immediate = {
         set_country_flag = ownship_owned
-        
         }
     }
