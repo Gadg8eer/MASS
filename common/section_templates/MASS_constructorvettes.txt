@@ -53,8 +53,8 @@ ship_section_template = {
 @section_cost_research = 10810
 
 ship_section_template = {
-	key = "MASS_CONSTRUCTORVETTE_WPS"
-	ship_size = constructor
+	key = "MASS_OWNSHIP_WPS"
+	ship_size = ownship
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "constructorvette_WPS_entity"
