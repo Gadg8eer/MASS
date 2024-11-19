@@ -41,8 +41,8 @@ constructorvette_ships_limit = {
 				value = leader_trait_spark_of_genius
 				value = leader_trait_spark_of_genius_2
 				value = leader_trait_MASS_godlike_inventor
-				value = leader_trait_MAP_codygibling_gadg8eer
-				value = leader_trait_MAP_codygibling_quick_gadg8eer
+				value = leader_trait_SNAP_codygibling_gadg8eer
+				value = leader_trait_SNAP_codygibling_quick_gadg8eer
 			}
 		}
 	}
@@ -61,9 +61,9 @@ ownship_ships_limit = {
 		is_scope_valid = yes
 		has_civic = {
 			OR = {
-				value = leader_trait_MAP_codygibling_quick_gadg8eer
-				value = leader_trait_MAP_codygibling_social_gadg8eer
-				value = leader_trait_MAP_codygibling_play_gadg8eer
+				value = leader_trait_SNAP_codygibling_quick_gadg8eer
+				value = leader_trait_SNAP_codygibling_social_gadg8eer
+				value = leader_trait_SNAP_codygibling_play_gadg8eer
 			}
 		}
 	}

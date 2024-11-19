@@ -35,6 +35,9 @@ tech_MASS_military_astroengineering_1 = {
 				has_ethic = ethic_militarist
 				has_ethic = ethic_fanatic_militarist
 				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
 			}
 		}
 	}
@@ -49,6 +52,9 @@ tech_MASS_military_astroengineering_1 = {
 				has_ethic = ethic_militarist
 				has_ethic = ethic_fanatic_militarist
 				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
 			}
 		}
 	}
