@@ -3,5 +3,5 @@ tags={
 	"Spaceships"
 	"Leaders"
 }
-name="MASSH: Military Astroengineering Ship Section Hybrids"
+name="Gadg8eer's Military Astroengineering"
 supported_version="3.14.1"
